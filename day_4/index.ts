@@ -1,7 +1,8 @@
-import fs = require("fs")
-import path = require("path")
+import { readFileSync } from "fs"
+import { resolve } from "path"
 
-let file: string = fs.readFileSync(path.resolve("day_4", "input.txt"), {encoding: "utf-8"})
+
+let file: string = readFileSync(resolve("day_4", "input.txt"), {encoding: "utf-8"})
 let file_idx: number = 0;
 
 let input: Array<number> = []

@@ -1,7 +1,8 @@
-import fs = require("fs")
-import path = require("path")
+import { readFileSync } from "fs"
+import { resolve } from "path"
 
-let file = fs.readFileSync(path.resolve("./", "day_3", "input.txt"), {encoding: "utf-8"})
+
+let file = readFileSync(resolve("./", "day_3", "input.txt"), {encoding: "utf-8"})
 
 let binary_2d_array: number[][] = []
 let row: Array<number> = []

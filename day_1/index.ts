@@ -1,7 +1,8 @@
-import fs = require("fs");
-import path = require("path")
+import { readFileSync } from "fs"
+import { resolve } from "path"
 
-const file: string = fs.readFileSync(path.resolve("./", "day_1", "input.txt"), {encoding: "utf-8"})
+
+const file: string = readFileSync(resolve("./", "day_1", "input.txt"), {encoding: "utf-8"})
 
 let count: number = 0;
 let last_sum: number = 0;
