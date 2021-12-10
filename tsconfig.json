@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2021",
+    "target": "ES5",
     "strict": true,
     "noImplicitAny": true,
-    "lib": ["ES2021"]
+    "lib": ["es2021"]
   }
 }
